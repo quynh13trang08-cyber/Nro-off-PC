@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play Java Game HD</title>
-    <script src="https://cjrtnc.leaningtech.com/2.0/loader.js"></script>
+    <title>Java Game Online Player (1280x720)</title>
     <style>
         body {
             background-color: #121212;
@@ -28,25 +27,20 @@
             border-radius: 8px;
             background: #000;
             box-shadow: 0 0 25px rgba(0,0,0,0.9);
-            display: flex;
-            align-items: center;
-            justify-content: center;
             overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
 <body>
     <h2>Java Game Online Player (1280x720)</h2>
-    <div id="game-container" id="cheerpjDisplay"></div>
-    <p>Đang tải bộ chạy Java, vui lòng chờ trong giây lát...</p>
-
-    <script>
-        async function loadGame() {
-            await cheerpjInit();
-            cheerpjCreateDisplay(1280, 720, document.getElementById('game-container'));
-            await cheerpjRunJar('/app/game.jar');
-        }
-        loadGame();
-    </script>
+    <div id="game-container">
+        <iframe src="https://j2me-loader.github.io/web/?jar=https://quynh13trang08-cyber.github.io/Nro-off-PC/game.jar"></iframe>
+    </div>
+    <p>Dùng bàn phím hoặc chuột/cảm ứng để điều khiển game.</p>
 </body>
 </html>
