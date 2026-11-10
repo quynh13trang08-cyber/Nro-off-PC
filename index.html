@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Java Game</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        #game-container {
+            width: 320px;
+            height: 480px;
+            border: 4px solid #333;
+            border-radius: 8px;
+            background: #000;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Java Game Online Player</h2>
+    <div id="game-container">
+        <!-- Sử dụng trình giả lập J2ME Web nhúng -->
+        <iframe src="https://nhn.github.io/j2me-js/?jar=game.jar"></iframe>
+    </div>
+    <p>Sử dụng bàn phím hoặc chuột/cảm ứng để điều khiển.</p>
+</body>
+</html>
